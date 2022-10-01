@@ -18,6 +18,15 @@ Table of content:
   - [**AWS Lake Formation**](#aws-lake-formation)
   - [**MSK**](#msk)
   - [**Amazon OpenSearch Service**](#amazon-opensearch-service)
+- [**Application Integration**](#application-integration)
+  - [**Amazon EventBridge**](#amazon-eventbridge)
+  - [**Simple Notification Service (SNS)**](#simple-notification-service-sns)
+  - [**Simple Queue Service (SQS)**](#simple-queue-service-sqs)
+  - [**Step Functions**](#step-functions)
+  - [**Amazon AppFlow**](#amazon-appflow)
+  - [**Managed Apache Airflow**](#managed-apache-airflow)
+  - [**Amazon MQ**](#amazon-mq)
+  - [**SWF**](#swf)
 
 ---
 
@@ -319,3 +328,177 @@ Fully managed, highly available, and secure service for Apache Kafka
 ## **Amazon OpenSearch Service**
 
 Run and Scale OpenSearch and Elasticsearch Clusters (successor to Amazon Elasticsearch Service)
+
+---
+
+# **Application Integration**
+
+## **Amazon EventBridge**
+
+**Build event-driven applications at scale**
+
+Amazon EventBridge is a serverless event bus that makes it easier to build event-driven applications at scale using events generated from your applications, integrated Software-as-a-Service (SaaS) applications, and AWS services.
+
+**Benefits and features**
+
+**Build event-driven architectures**
+
+EventBridge simplifies the process of building event-driven architectures. With EventBridge, your event targets don’t need to be aware of event sources because you can filter and publish directly to EventBridge. There is no setup required. Improve developer agility as well as application resiliency with loosely coupled event-driven architectures.
+
+**Connect SaaS apps**
+
+EventBridge ingests data from supported SaaS applications and routes it to AWS services and SaaS targets (through API destinations - an HTTP invocation endpoint target for events) without writing custom integration code. You can use EventBridge to connect your SaaS apps, or use events from your SaaS apps to trigger workflows.
+
+**Write less custom code**
+
+EventBridge makes it easier to connect applications. You can ingest, filter, transform and deliver events without writing custom code. The EventBridge schema registry stores a collection of easy-to-find event schemas and enables you to download code bindings for those schemas in your IDE so you can represent the event as a strongly-typed object in your code. Automatically add schemas discovered from your event bus to the registry through the schema discovery feature.
+
+**Reduce operational overhead**
+
+With EventBridge, there are no servers to provision, patch, and manage. EventBridge automatically scales based on the number of events ingested, and you pay only for events published by your AWS or SaaS applications. EventBridge has built-in distributed availability, fault-tolerance and a native event archive and replay capability that makes it easier to recover from failures or build a new application state from old events.
+
+**Use cases**
+
+**Re-architect for speed**
+
+Use EventBridge to accelerate modernizing and re-designing your architecture with decoupled services and applications. With EventBridge, there is no need for heavy coordination between event producer and consumer applications or services. You can speed up your organization’s development process by allowing teams to iterate on features without explicit dependencies between systems.
+
+**Monitoring and auditing**
+
+You can monitor and audit your AWS environments and respond to operational changes in your applications in real-time to prevent infrastructure vulnerabilities. For example, when your resources are accessed by cross-accounts or public accounts, you can configure an Amazon Access Analyzer event to be generated and sent to an AWS Lambda Function using EventBridge to remove the unintended permissions.
+
+**Extend functionality via SaaS integrations**
+
+You can extend the functionality of your applications by easily connecting them to other SaaS applications via EventBridge. For example, you can send custom events to EventBridge when a new user has been created in a free tier and send that event via API Destinations to Zendesk CRM.
+
+**Customize SaaS with AI/ML**
+
+You can enrich your events from SaaS applications using AWS Artificial Intelligence/Machine Learning services and gain valuable insights. For example, you can load your data from Shopify to EventBridge to trigger a workflow and use AI services such as Amazon Comprehend for image tagging of new retail products.
+
+--- 
+
+## **Simple Notification Service (SNS)**
+
+**Pub/sub messaging for microservices and serverless applications.**
+
+Amazon SNS is a highly available, durable, secure, fully managed pub/sub messaging service that enables you to decouple microservices, distributed systems, and event-driven serverless applications. Amazon SNS provides topics for high-throughput, push-based, many-to-many messaging.
+
+**Benefits and features**
+
+**Reliably deliver messages with durability**
+
+Amazon SNS uses cross availability zone message storage to provide high message durability. Amazon SNS reliably delivers messages to valid AWS endpoints, such as Amazon SQS queues and AWS Lambda functions.
+
+**Automatically scale your workload**
+
+Amazon SNS leverages the proven AWS cloud to dynamically scale with your application. Amazon SNS is a fully managed service, taking care of the heavy lifting related to capacity planning, provisioning, monitoring, and patching.
+
+**Simplify your architecture with Message Filtering**
+
+Amazon SNS helps you simplify your pub/sub messaging architecture by offloading the message filtering logic from your subscriber systems, and message routing logic from your publisher systems.
+
+**Keep messages private and secure**
+
+Amazon SNS topic owners can set topic policies that restrict who can publish and subscribe to a topic. Amazon SNS also ensures that data is encrypted in transit and at rest, and provides VPC endpoints for message privacy.
+
+---
+
+## **Simple Queue Service (SQS)**
+
+**A message queuing service**
+
+Amazon SQS provides queues for high-throughput, system-to-system messaging. You can use queues to decouple heavyweight processes and to buffer and batch work. Amazon SQS stores messages until microservices and serverless applications process them.
+
+**Benefits and features**
+
+**Highly scalable Standard and FIFO queues**
+
+Queues scale elastically with your application. Nearly unlimited throughput and no limit to the number of messages per queue in Standard queues. First-In-First-Out delivery and exactly once processing in FIFO queues.
+
+**Durability and availability**
+
+Your queues are distributed on multiple servers. Redundant infrastructure provides highly concurrent access to messages.
+
+**Security**
+
+Protection in transit and at rest. Transmit sensitive data in encrypted queues. Send messages in a Virtual Private Cloud.
+
+**Batching**
+
+Send, receive, or delete messages in batches of up to 10 messages or 256KB to save costs.
+
+---
+
+## **Step Functions**
+
+**Assemble functions into business-critical applications**
+
+AWS Step Functions is a serverless function orchestrator that makes it easy to sequence AWS Lambda functions and multiple AWS services into business-critical applications. Through its visual interface, you can create and run a series of checkpointed and event-driven workflows that maintain the application state.
+
+**How it works**
+
+1- Define your visual workflow in Workflow Studio and the console will auto-generate the code for you. You can also code it yourself using code snippets in the console or locally with VS Code.
+
+2 - Specify the resources, such as Lambda functions and SNS topics, that you want to trigger in your workflow.
+
+3 - Start an execution to visualize and verify that the steps of your workflow are operating as intended. Inspect and debug your execution history from the console directly.
+
+**Benefits and features**
+
+**Built-in error handling**
+
+AWS Step Functions tracks the state of each step, so you can automatically retry failed or timed-out tasks, catch specific errors, and recover gracefully, whether the task takes seconds or months to complete.
+
+**Execution event history**
+
+AWS Step Functions creates a detailed event log for every execution, so when things do go wrong, you can quickly identify not only where, but why. All of the execution history is available visually and programmatically to quickly troubleshoot and remediate failures.
+
+**Automatic scaling**
+
+AWS Step Functions automatically scales the operations and underlying compute to run the steps of your application for you in response to changing workloads. Step Functions scales automatically to help ensure the performance of your application workflow remains consistently high as the frequency of requests increases.
+
+**High availability**
+
+AWS Step Functions has built-in fault tolerance. Step Functions maintains service capacity across multiple Availability Zones in each region to help protect application workflows against individual machine or data center facility failures. There are no maintenance windows or scheduled downtimes.
+
+**Pay per use**
+
+With AWS Step Functions, you pay only for the transition from one step of your application workflow to the next, called a state transition. Billing is metered by state transition, regardless of how long each state persists (up to one year).
+
+**Administrative security**
+
+AWS Step Functions is integrated with AWS Identity and Access Management (IAM). IAM policies can be used to control access to the Step Functions APIs.
+
+**Use cases**
+
+**Web service integration**
+
+Build workflows that coordinate tasks across different services. Yelp transformed a monolithic business-critical code base into a simpler and more resilient billing service.
+
+**Data processing**
+The Guardian newspaper automated serverless data processing and subscriber management using AWS Step Functions, AWS Lambda, and Amazon CloudWatch Events.
+
+---
+
+## **Amazon AppFlow**
+
+Amazon AppFlow integrates apps and automates data flows without code.
+
+--- 
+
+## **Managed Apache Airflow**
+
+Run Apache Airflow without provisioning or managing servers.
+
+
+## **Amazon MQ**
+
+Managed message broker service for Apache ActiveMQ and RabbitMQ
+
+---
+
+## **SWF**
+
+Workflow Service for Coordinating Application Components
+
+---
