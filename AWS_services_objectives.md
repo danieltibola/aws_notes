@@ -27,6 +27,25 @@ Table of content:
   - [**Managed Apache Airflow**](#managed-apache-airflow)
   - [**Amazon MQ**](#amazon-mq)
   - [**SWF**](#swf)
+- [**AR & VR**](#ar--vr)
+  - [**Amazon Sumerian**](#amazon-sumerian)
+- [**AWS Cost Management**](#aws-cost-management)
+  - [**AWS Budgets**](#aws-budgets)
+  - [**Cost Explorer**](#cost-explorer)
+  - [**AWS Application Cost Profiler**](#aws-application-cost-profiler)
+  - [**AWS Billing Conductor**](#aws-billing-conductor)
+  - [**AWS Marketplace Subscriptions**](#aws-marketplace-subscriptions)
+- [**Blockchain**](#blockchain)
+  - [**Amazon Managed Blockchain**](#amazon-managed-blockchain)
+- [**Business Applications**](#business-applications)
+  - [**Alexa for Business**](#alexa-for-business)
+  - [**Amazon Chime**](#amazon-chime)
+  - [**Amazon Connect**](#amazon-connect)
+  - [**Amazon Honeycode**](#amazon-honeycode)
+  - [**Amazon Pinpoint**](#amazon-pinpoint)
+  - [**Amazon Simple Email Service**](#amazon-simple-email-service)
+  - [**Amazon WorkDocs**](#amazon-workdocs)
+  - [**Amazon WorkMail**](#amazon-workmail)
 
 ---
 
@@ -500,5 +519,175 @@ Managed message broker service for Apache ActiveMQ and RabbitMQ
 ## **SWF**
 
 Workflow Service for Coordinating Application Components
+
+---
+
+# **AR & VR**
+
+## **Amazon Sumerian**
+
+Easily create and run browser-based 3D, augmented reality (AR), and virtual reality (VR) applications.
+
+Amazon Sumerian will be transitioning the existing experience and functionality to allow customers to author scenes using Babylon.js and publish with AWS Amplify. **The Amazon Sumerian service is no longer accepting new customers.**
+
+**Benefits**
+
+**Create a 3D scene in minutes**
+
+Easily create and embed 3D scenes into new or existing web pages with Babylon.js.
+
+**Easily integrate with Sumerian Hosts**
+
+Sumerian Hosts are available open source on GitHub for easy integration with your Babylon.js and Three.js applications.
+
+**Deliver anytime, anywhere**
+
+One-click host your 3D experience using AWS Amplify to deploy your scenes anywhere.
+
+---
+
+# **AWS Cost Management**
+
+## **AWS Budgets**
+
+You can use AWS Budgets to set custom budgets that alert you when your costs and usage, utilization, or coverage of Savings Plans and RIs exceed your budgeted amount.
+
+AWS Budgets information is updated up to three times a day. Updates typically occur between 8 to 12 hours after the previous update.
+
+**You can create the following types of budgets:**
+
+ - **Cost budgets** – Plan how much you want to spend on a service.
+
+ - **Usage budgets** – Plan how much you want to use one or more services.
+
+ - **RI utilization budgets** – Define a utilization threshold and receive alerts when your RI usage falls below that threshold. This lets you see if your RIs are unused or under-utilized.
+
+ - **RI coverage budgets** – Define a coverage threshold and receive alerts when the number of your instance hours that are covered by RIs fall below that threshold. This lets you see how much of your instance usage is covered by a reservation.
+
+ - **Savings Plans utilization budgets** – Define a utilization threshold and receive alerts when the usage of your Savings Plans falls below that threshold. This lets you see if your Savings Plans are unused or under-utilized.
+
+ - **Savings Plans coverage budgets** – Define a coverage threshold and receive alerts when your Savings Plans eligible usage that is covered by Savings Plans fall below that threshold. This lets you see how much of your instance usage is covered by Savings Plans.
+
+---
+
+## **Cost Explorer**
+
+Cost Explorer is a tool that enables you to visualize, understand, and manage your AWS costs and usage over time. With Cost Explorer, you can filter and group by values such as API operation, Availability Zone, AWS service, custom cost allocation tag, Amazon EC2 instance type, purchase option, AWS Region, usage type, usage type group, and more. If you use consolidated billing, you can also filter by member account. In addition, you can see a forecast of future costs based on your historical cost data.
+
+After you have achieved your desired results with filters and group-bys, you can either download your results by choosing Download as CSV or save the report by clicking Save to report library.
+
+You can enable Cost Explorer for your account using this procedure on the Billing and Cost Management console. **You can't enable Cost Explorer using the API.** After you enable Cost Explorer, AWS prepares the data about your costs for the current month and the last 12 months, and then calculates the forecast for the next 12 months. The current month's data is available for viewing in about 24 hours. The rest of your data takes a few days longer. Cost Explorer updates your cost data at least once every 24 hours.
+
+**Use cases**
+
+**Build custom applications**
+
+Directly access the interactive, ad-hoc analytics engine that powers AWS Cost Explorer. The Cost Explorer API allows you to programmatically query your cost and usage data.
+
+**Use granular filtering**
+
+AWS Cost Explorer helps you visualize, understand, and manage your AWS costs and usage over a daily or monthly granularity. You can also access your data with further granularity by enabling hourly and resource level granularity.
+
+**Forecasting with Cost Explorer**
+
+You create a forecast by selecting a future time range for your report. You can use a forecast to estimate your AWS bill and set alarms and budgets for based on predictions.
+
+---
+
+## **AWS Application Cost Profiler**
+
+Cost per tenant and workload
+
+---
+
+## **AWS Billing Conductor**
+
+Simplifying your billing practice
+
+---
+
+## **AWS Marketplace Subscriptions**
+
+Digital catalog where you can find, buy, and deploy software
+
+---
+
+# **Blockchain**
+
+## **Amazon Managed Blockchain**
+
+Easily create and manage scalable blockchain networks
+
+Amazon Managed Blockchain is a fully managed service that makes it easy to join public networks or create and manage scalable private networks using the popular open-source Hyperledger Fabric and Ethereum frameworks. You can write smart contracts and applications and run them on the blockchain network to transact securely.
+
+**Benefits and features**
+
+**Fully managed**
+
+Get started with blockchain in minutes. With Amazon Managed Blockchain, you can quickly create blockchain networks that span multiple AWS accounts and eliminate manual provisioning of hardware and configuring of software, security, and network settings.
+
+**Choice of framework**
+
+Choice of frameworks between Hyperledger Fabric and Ethereum.
+
+**Reliable and secure**
+
+Amazon Managed Blockchain leverages Amazon Quantum Ledger Database Technology (QLDB) to improve the reliability of the Hyperledger Fabric Ordering Service. Also, Managed Blockchain uses AWS Key Management Service (KMS) technology to secure the Hyperledger Fabric Certificate Authority.
+
+**Integrated**
+
+Send blockchain network activity from Amazon Managed Blockchain to AWS analytics services like Amazon Redshift to get additional insights from your network.
+
+**Sample use cases**
+
+**Financial services**
+
+Financial institutions can reduce the time and cost of cross-boundary asset transfers by using an Amazon Managed Blockchain network to directly send payments to other network members in a trusted way.
+
+**Supply chain**
+
+Manufacturing businesses can use an Amazon Managed Blockchain network as a transparent and efficient way to keep track of ownership of goods that move across global supply chain networks.
+
+---
+
+# **Business Applications**
+
+## **Alexa for Business**
+Alexa for Business Provides Tools to Manage Alexa in Your Organization
+
+---
+
+## **Amazon Chime**
+Amazon Chime is a communications service that transforms online meetings
+
+---
+
+## **Amazon Connect**
+Amazon Connect is a contact center that enables engagement at any scale.
+
+---
+
+## **Amazon Honeycode**
+Build mobile and web apps without programming
+
+---
+
+## **Amazon Pinpoint**
+Engage Users via Email, SMS, Push & Analytics
+
+---
+
+## **Amazon Simple Email Service**
+Email Sending and Receiving Service
+
+---
+
+## **Amazon WorkDocs**
+Secure Enterprise Storage and Sharing Service
+
+---
+
+## **Amazon WorkMail**
+Secure Email and Calendaring Service
 
 ---
