@@ -1,8 +1,9 @@
-***AWS Services and it's objectives***
+# ***AWS Services and it's objectives***
 
 Organized by technology
 
 Table of content:
+
 - [**Analytics**](#analytics)
   - [**Athena:**](#athena)
   - [**Amazon EMR**](#amazon-emr)
@@ -57,10 +58,10 @@ Amazon Athena is an interactive query service that makes ir easy to analyze data
 
 *Benefits and features:*
 
-**Start Querying now:** 
-Athena is serverless. 
+**Start Querying now:**
+Athena is serverless.
 
-**Powerful:** 
+**Powerful:**
 Athena is ideal for quick, ad-hoc querying, but it can also handle complex analysis, including large joins, window functions, and arrays.
 
 **Cost effective:**
@@ -160,10 +161,11 @@ Collect gigabytes of data per second and make it available for processing and an
 
 **Real-time data capture:**
 Ingest and store data streams from hundreds of thousands of data sources:
- - Log and event data collection
- - IoT device data capture
- - Mobile data collection
- - Gaming data feed
+
+- Log and event data collection
+- IoT device data capture
+- Mobile data collection
+- Gaming data feed
 
 **Kinesis Data Firehose**
 
@@ -172,10 +174,11 @@ Prepare and load real-time data streams into data stores and analytics tools.
 
 **Load real-time data:**
 Load streaming data into data lakes, data stores, and analytics tools for:
- - Log and event analytics
- - IoT data analytics
- - Clickstream analytics
- - Security monitoring
+
+- Log and event analytics
+- IoT data analytics
+- Clickstream analytics
+- Security monitoring
 
 **Kinesis Data Analytics**
 
@@ -184,10 +187,11 @@ Get actionable insights from streaming data in real time.
 
 **Get insights in real time:**
 Analyze streaming data and gain actionable insights in real time:
- - Real-time streaming ETL
- - Real-time log analytics
- - Ad tech and digital marketing analytics
- - Real-time IoT device monitoring
+
+- Real-time streaming ETL
+- Real-time log analytics
+- Ad tech and digital marketing analytics
+- Real-time IoT device monitoring
 
 **Use Cases**
 
@@ -205,7 +209,7 @@ You can use Amazon Kinesis services for real-time application monitoring, fraud 
 
 **Analyze IoT Device Data**
 
-You can use Amazon Kinesis services to process streaming data from IoT devices such as consumer appliances, embedded sensors, and TV set-top boxes. You can then use the data to send real-time alerts or take other actions programmatically when a sensor exceeds certain operating thresholds. To build your application, you can use our sample IoT analysis code. 
+You can use Amazon Kinesis services to process streaming data from IoT devices such as consumer appliances, embedded sensors, and TV set-top boxes. You can then use the data to send real-time alerts or take other actions programmatically when a sensor exceeds certain operating thresholds. To build your application, you can use our sample IoT analysis code.
 
 ---
 
@@ -221,7 +225,7 @@ QuickSight powers millions of dashboard views weekly for customers, allowing the
 
 **Enable BI for everyone with QuickSight Q**
 
-Ask conversational questions of your data and use Q’s ML-powered engine to receive relevant visualizations without the time consuming data preparation from authors and admins. 
+Ask conversational questions of your data and use Q’s ML-powered engine to receive relevant visualizations without the time consuming data preparation from authors and admins.
 
 **Perform advanced analytics with ML insights**
 
@@ -394,7 +398,7 @@ You can extend the functionality of your applications by easily connecting them 
 
 You can enrich your events from SaaS applications using AWS Artificial Intelligence/Machine Learning services and gain valuable insights. For example, you can load your data from Shopify to EventBridge to trigger a workflow and use AI services such as Amazon Comprehend for image tagging of new retail products.
 
---- 
+---
 
 ## **Simple Notification Service (SNS)**
 
@@ -503,12 +507,11 @@ The Guardian newspaper automated serverless data processing and subscriber manag
 
 Amazon AppFlow integrates apps and automates data flows without code.
 
---- 
+---
 
 ## **Managed Apache Airflow**
 
 Run Apache Airflow without provisioning or managing servers.
-
 
 ## **Amazon MQ**
 
@@ -556,17 +559,17 @@ AWS Budgets information is updated up to three times a day. Updates typically oc
 
 **You can create the following types of budgets:**
 
- - **Cost budgets** – Plan how much you want to spend on a service.
+- **Cost budgets** – Plan how much you want to spend on a service.
 
- - **Usage budgets** – Plan how much you want to use one or more services.
+- **Usage budgets** – Plan how much you want to use one or more services.
 
- - **RI utilization budgets** – Define a utilization threshold and receive alerts when your RI usage falls below that threshold. This lets you see if your RIs are unused or under-utilized.
+- **RI utilization budgets** – Define a utilization threshold and receive alerts when your RI usage falls below that threshold. This lets you see if your RIs are unused or under-utilized.
 
- - **RI coverage budgets** – Define a coverage threshold and receive alerts when the number of your instance hours that are covered by RIs fall below that threshold. This lets you see how much of your instance usage is covered by a reservation.
+- **RI coverage budgets** – Define a coverage threshold and receive alerts when the number of your instance hours that are covered by RIs fall below that threshold. This lets you see how much of your instance usage is covered by a reservation.
 
- - **Savings Plans utilization budgets** – Define a utilization threshold and receive alerts when the usage of your Savings Plans falls below that threshold. This lets you see if your Savings Plans are unused or under-utilized.
+- **Savings Plans utilization budgets** – Define a utilization threshold and receive alerts when the usage of your Savings Plans falls below that threshold. This lets you see if your Savings Plans are unused or under-utilized.
 
- - **Savings Plans coverage budgets** – Define a coverage threshold and receive alerts when your Savings Plans eligible usage that is covered by Savings Plans fall below that threshold. This lets you see how much of your instance usage is covered by Savings Plans.
+- **Savings Plans coverage budgets** – Define a coverage threshold and receive alerts when your Savings Plans eligible usage that is covered by Savings Plans fall below that threshold. This lets you see how much of your instance usage is covered by Savings Plans.
 
 ---
 
@@ -653,41 +656,49 @@ Manufacturing businesses can use an Amazon Managed Blockchain network as a trans
 # **Business Applications**
 
 ## **Alexa for Business**
+
 Alexa for Business Provides Tools to Manage Alexa in Your Organization
 
 ---
 
 ## **Amazon Chime**
+
 Amazon Chime is a communications service that transforms online meetings
 
 ---
 
 ## **Amazon Connect**
+
 Amazon Connect is a contact center that enables engagement at any scale.
 
 ---
 
 ## **Amazon Honeycode**
+
 Build mobile and web apps without programming
 
 ---
 
 ## **Amazon Pinpoint**
+
 Engage Users via Email, SMS, Push & Analytics
 
 ---
 
 ## **Amazon Simple Email Service**
+
 Email Sending and Receiving Service
 
 ---
 
 ## **Amazon WorkDocs**
+
 Secure Enterprise Storage and Sharing Service
 
 ---
 
 ## **Amazon WorkMail**
+
 Secure Email and Calendaring Service
 
 ---
